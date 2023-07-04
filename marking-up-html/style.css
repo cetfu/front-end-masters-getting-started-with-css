@@ -68,3 +68,24 @@ a:hover {
     display: block;
     font-size: 4rem;
 }
+
+footer {
+    background-color: var(--plum);
+    padding: 2rem;
+}
+footer h2 {
+    font-family: var(--sans);
+    margin: 1rem auto;
+    text-align: center;
+}
+
+footer p {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 1rem;
+}
+footer p:last-child {
+    margin-top: 3rem;
+}
