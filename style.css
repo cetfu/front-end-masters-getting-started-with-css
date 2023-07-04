@@ -14,6 +14,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -73,6 +74,7 @@ a:hover {
     background-color: var(--plum);
     padding: 2rem;
 }
+
 #contact h2 {
     font-family: var(--sans);
     margin: 1rem auto;
@@ -88,7 +90,7 @@ a:hover {
 }
 
 #contact p a {
-    color:  var(--white);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -97,16 +99,16 @@ a:hover {
 }
 
 nav {
-    display: flex;
-    height: 5rem;
+    display: block;
     font-family: var(--mono);
     font-size: 80%;
-    margin: 2rem 0;
+    padding: 4rem 1rem;
 }
 
 nav h1 a {
     font-family: var(--sans);
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -115,19 +117,21 @@ nav ul {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-}
-nav li:first-child {
-    flex-basis: 100%;
-    text-align: center;
+    gap: 1rem;
 }
 
-nav [class*="fa-"]{
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: left;
+    margin-right: auto;
+}
+
+nav [class*="fa-"] {
     font-size: 150%;
     color: var(--aqua);
 }
 
-nav h1 [class*="fa-"]{
+nav h1 [class*="fa-"] {
     font-size: 100%;
     color: var(--aqua);
 }
@@ -137,6 +141,7 @@ nav a {
     text-decoration: none;
     display: block;
 }
+
 nav a:hover {
     color: var(--magenta)
 }
@@ -171,6 +176,7 @@ footer ul {
     column-gap: 3rem;
     list-style-type: none;
 }
+
 footer li i {
     font-size: 2.5rem;
     color: var(--magenta);
@@ -185,14 +191,67 @@ footer p {
     height: 2px;
 }
 
+.section-dk-blue {
+    background-color: var(--dkblue);
+}
+
+#projects {
+    padding: 4rem 1rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--aqua);
+}
+
+#projects h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+
+.blackbox {
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
 @media (min-width: 850px) {
     nav {
-        max-width: 1080px;
+        max-width: 1200px;
         margin: 0 auto;
     }
-    nav li:first-child{
+
+    nav li:first-child {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;
     }
+
 }

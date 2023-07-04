@@ -1,5 +1,5 @@
-const resumeButton = document.getElementById("resumeButton")
+const button = document.getElementById("button")
 
-resumeButton.addEventListener("click", () =>{
+button.addEventListener("click", () =>{
     // TODO download the resume
 })
