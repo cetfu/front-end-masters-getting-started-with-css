@@ -120,6 +120,11 @@ nav [class*="fa-"]{
     color: var(--aqua);
 }
 
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color: var(--aqua);
+}
+
 nav a {
     color: var(--white);
     text-decoration: none;
@@ -129,4 +134,16 @@ nav a:hover {
     color: var(--magenta)
 }
 
+nav #resumeButton {
+    background-color: var(--magenta);
+    color: var(--white);
+    font-size: 80%;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+nav #resumeButton:hover {
+    background-color: var(--hotmag);
+}
 
