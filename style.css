@@ -246,6 +246,9 @@ footer p {
     border-radius: 25px;
     padding: 1rem;
 }
+#projects {
+    padding: 4rem;
+}
 
 @media (min-width: 550px) {
     article {
