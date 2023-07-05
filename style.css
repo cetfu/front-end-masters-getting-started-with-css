@@ -80,6 +80,7 @@ img {
 #contact {
     background-color: var(--plum);
     padding: 4rem 0;
+    margin: 0 auto;
 }
 
 #contact h2 {
@@ -184,6 +185,7 @@ footer ul {
     column-gap: 3rem;
     list-style-type: none;
     padding: 0;
+    margin: 2rem 0;
 }
 
 footer li i {
@@ -252,12 +254,17 @@ footer p {
 }
 
 
-@media (min-width: 550px) {
+@media (min-width: 800px) {
     article {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
     }
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .text {
         order: 2;
         text-align: right;
